@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="AnnotationBased:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="AnnotationBased.war">
+      <element id="artifact" artifact-name="AnnotationBased:war exploded" />
+    </root>
+  </artifact>
+</component>

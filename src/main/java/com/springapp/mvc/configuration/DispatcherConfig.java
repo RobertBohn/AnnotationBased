@@ -32,6 +32,7 @@ public class DispatcherConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/resources/");
+        registry.setOrder(-1);
     }
 
     @Bean

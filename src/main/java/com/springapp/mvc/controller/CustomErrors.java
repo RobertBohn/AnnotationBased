@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/")
 public class CustomErrors {
 
-    @RequestMapping("*")
+    @RequestMapping("**")
     @ExceptionHandler(NoSuchRequestHandlingMethodException.class)
     public String handle404(ModelMap model, HttpServletRequest request, HttpServletResponse response, Object handler) {
         model.addAttribute("message", request.getRequestURI());
